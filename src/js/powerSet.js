@@ -4,7 +4,7 @@
  * @param {number[]} set 
  * @returns {[number[]]} ps
  */
-const powerSet = (set) => {
+const powerSet = set => {
     let ps = [
         []
     ]

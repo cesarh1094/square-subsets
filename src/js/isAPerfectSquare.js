@@ -4,7 +4,7 @@
  * @param {number} num 
  * @returns {boolean} 
  */
-const isAPerfectSquare = (num) => {
+const isAPerfectSquare = num => {
     return (0 < num) && (0 === Math.sqrt(num) % 1)
 }
 

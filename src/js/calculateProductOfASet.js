@@ -1,11 +1,17 @@
+import hasValidMembers from './internal/hasValidMembers'
+
 /**
  * Calculate the product of a set of numbers
  * 
  * @param {number[]} set 
  * @returns {number} product
  */
-const calculateProductOfASet = (set) => {
-    if (undefined == set || 0 === set.length || !set instanceof Array) {
+const calculateProductOfASet = set => {
+    if (undefined === set || 0 === set.length || !(set instanceof Array)) {
+        return 0
+    }
+
+    if (!hasValidMembers(set)) {
         return 0
     }
 
