@@ -4,4 +4,8 @@ describe('Testing `hasValidMembers` function', () => {
     it('Return false', () => {
         expect(hasValidMembers([1, '2', 3, '4'])).toBe(false)
     })
+
+    it('Return true', () => {
+        expect(hasValidMembers([1, 2, 3, 4])).toBe(true)
+    })
 })
