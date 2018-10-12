@@ -18,4 +18,10 @@ describe('Testing `productOfASet` function', () => {
 
         expect(p).toBe(0)
     })
+
+    it('Return 0', ()=>{
+        let p = productOfASet(undefined)
+
+        expect(p).toBe(0)
+    })
 })

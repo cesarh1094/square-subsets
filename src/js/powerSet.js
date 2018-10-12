@@ -4,7 +4,7 @@ import hasValidMembers from "./internal/hasValidMembers";
  * Calculate the power set of a given set of numbers
  * Note: the empty set is a subset of every set
  * 
- *@see {@link https://www.ics.uci.edu/~alspaugh/cls/shr/powerset.html}
+ * @see {@link https://www.ics.uci.edu/~alspaugh/cls/shr/powerset.html}
  * 
  * @param {number[]} set 
  * @returns {[number[]]} ps

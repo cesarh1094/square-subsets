@@ -7,11 +7,13 @@ import hasValidMembers from './internal/hasValidMembers'
  * @returns {number} product
  */
 const calculateProductOfASet = set => {
-    if (undefined === set || 0 === set.length || !(set instanceof Array)) {
+    if (!set || !(set instanceof Array) || 0 === set.length) {
+        console.error("A set must be a valid array of length > 0")
         return 0
     }
 
     if (!hasValidMembers(set)) {
+        console.error("Every member of the set must be a number")
         return 0
     }
 
